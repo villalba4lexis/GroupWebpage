@@ -1,78 +1,152 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #1e1e2f;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for team logo image */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Team logo styling */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 100px;
     margin-top: 10px;
 }
 
-/* Menu button styling */
+/* Navigation buttons */
 header nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header nav button {
-    background: #007BFF;
-    color: white;
+    background-color: #0056b3;
+    color: #ffffff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin: 0 8px;
     border-radius: 5px;
+    font-size: 0.95rem;
     cursor: pointer;
-    margin: 0 5px;
+    transition: background-color 0.3s ease;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background-color: #003e8a;
 }
 
-/* Flex container for team bios and vision sections */
+/* Container layout */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-/* Card styling for individual team bios */
+/* Team member cards */
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     padding: 20px;
     flex: 1 1 calc(30% - 40px);
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
-h2 {
-    margin: 0 0 10px;
+.card h2 {
+    margin-top: 0;
+    color: #222;
+    font-size: 1.3rem;
 }
 
-/* Initially hide bio details */
+.card p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Bio section toggle */
 .bio {
     display: none;
-    margin-top: 10px;
-    color: #555;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Avatar styling */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Moodboard layout */
+.moodboard {
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.moodboard h4 {
+    margin-bottom: 10px;
+    color: #0056b3;
+    font-size: 1.05rem;
+}
+
+.moodboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.moodboard-grid img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #fafafa;
+}
+
+.moodboard-grid a {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #e6f0ff;
+    color: #0056b3;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.moodboard-grid a:hover {
+    background-color: #d0e4ff;
 }
 
 /* Button styling */
@@ -83,8 +157,18 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #0056b3;
+}
+
+/* List formatting for team rules */
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 0.95rem;
 }
